@@ -1,7 +1,7 @@
 
 require("fs").readFile(process.argv[2], function(err, data)
 {
-    var parser = require("./Narcissus/lib/parser");
+    var parser = require("./narcissus/lib/parser");
 
     var start = new Date();
     result = parser.parse(data.toString());
