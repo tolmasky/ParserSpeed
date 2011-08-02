@@ -1,7 +1,7 @@
 
 function run(generators)
 {
-    var child = require('child_process').spawn("node", [generators[0], "jquery.js"]);
+    var child = require('child_process').spawn("node", [__dirname + "/" + generators[0], __dirname + "/" + "jquery.js"]);
     
     child.stdout.on('data', function (data)
     {
